@@ -20,4 +20,19 @@ describe('example test', () => {
         let leapYear = isLeapYear(1800);
         expect(leapYear).toBe(false);
     })
+
+    it("should return true if its divisible by 0", () => {
+        let leapYear = isLeapYear(0);
+        expect(leapYear).toBe(true);
+    })
+
+    it("should return true if its divisible by -400", () => {
+        let leapYear = isLeapYear(-400);
+        expect(leapYear).toBe(true);
+    })
+
+    it("should return true if its divisible by 400.1", () => {
+        let leapYear = isLeapYear(400.1);
+        expect(leapYear).toBe(true);
+    })
 })
