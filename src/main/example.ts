@@ -1,10 +1,11 @@
-export function isLeapYear(year:number) {
+export function isLeapYear(year: number) {
     if(year %400 === 0){
         return true
-    }else{
+    } else {
         if(year % 4 === 0 && year % 100 !== 0) {
-            return true}
-        else
-            {return false}
+            return true
+        } else {
+            return false
+        }
     }
 }
